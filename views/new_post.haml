@@ -1,0 +1,19 @@
+%strong{:class => "new_post", :id => "message"} Post a new blog
+
+%div#post
+  %form{:action => "blog_post", :method => "post"}
+    %br
+      %div.title Title:
+      %input{:type => "text", :name => "title"}
+    %br
+      %div.author Author:
+      %input{:type => "text", :name => "author"}
+    %br
+      %div.date Date of Post:
+      %input{:type => "text", :name => "date"}
+    %br
+      %div.content Content:
+      %textarea{:type => "text", :name => "content"}
+
+    %br
+      %input{:type => "submit", :id => "Submit", :value => "Submit"}

@@ -1,0 +1,5 @@
+new_post:
+  title: ~title
+  author: ~full_name
+  date: ~today
+  content: ~paragraphs(paragraph_count = 3)

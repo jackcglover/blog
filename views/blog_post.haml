@@ -1,0 +1,15 @@
+%strong{:class => "blog_post", :id => "message"} Here's your new post
+
+
+%div
+
+  %p= new_post.title
+  %p= new_post.author
+  %p= new_post.content
+  %p= new_post.date
+
+%br
+  See your blog list
+  %form{:action => "blog_list", :method => "get"}
+
+    %input{:type => "submit", :id => "Submit", :value => "List"}
